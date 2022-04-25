@@ -5,34 +5,39 @@
     <meta name="description" content="This is where your description goes" />
     <meta name="keywords" content="one, two, three" />
 
-    <title>Title in the tab</title>
+    <title>Recipes</title>
 
     <!-- external CSS link -->
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- 
-		<h1>Which Cocktail?</h1>
-		<input type="text" name="" value="">
-		<button type="button" name="button">Get Cocktail</button>
+    <header>
+      <h1>Find a Recipe</h1>
+      <section class="selectContainer">
+        <form action="">
+          <label for="type-selection">Search by:</label>
+          <select name="endpoint" id="endpoint-select" autocomplete="off">
+            <option value="select" class="eachOption" selected>Select</option>
+            <!-- <option value="cat" class="eachOption">Category</option>
+			  <option value="country" class="eachOption">Country</option>
+			  <option value="ing" class="eachOption">Ingredient</option> -->
+            <option value="name" class="eachOption">Name</option>
+            <option value="letter" class="eachOption">First Letter</option>
+          </select>
+          <input
+            type="text"
+            name=""
+            onfocus="this.value=''"
+            value=""
+            autocomplete="off"
+          />
+          <button type="button" name="button">Go</button>
+        </form>
+      </section>
+    </header>
 
-		<h2>Name</h2>
-		<img src="" alt="">
-		<h3>Instructions</h3> -->
-
-    <input type="text" name="" value="" />
-    <button type="button" name="button">Get Cocktail</button>
-    <div class="wrapper">
-      <div class="gallery">
-        <!-- <section class="gallery__img">
-          <h2>CARD ONE</h2>
-        </section> -->
-        <!-- <section class="gallery__img">
-          <h2>CARD TWO</h2>
-        </section> -->
-      </div>
-    </div>
+    <div class="wrapper"></div>
 
     <script type="text/javascript" src="js/main.js"></script>
   </body>
